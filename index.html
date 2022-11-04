@@ -17,12 +17,14 @@
       <div id="container" class="absolute">
         <div id="start" class="column">
           <p class="message pre">
-            1. Usa W, A, S, D para controlar la nave espacial, presiona Espacio para lanzar. 2.
-            El valor inicial del combustible es 15, y cada segundo decrece 1 punto, cuando el valor del combustible es 0, el juego termina. 3.
-            Tocar una botella de combustible que se ha caído añade 15 puntos a un máximo de 30 puntos. 4.
-            Golpea un barco enemigo por 5 puntos. Los planetas deben ser golpeados dos veces, sumando 10 puntos. Deduce 10 puntos por golpear a un aliado. 5.
-            Golpea al enemigo pierde 15 puntos de combustible, golpea al amigo resta 10 puntos. 6. El juego permite puntuaciones negativas. 7. Presione P
-            Pausa el juego, presiona M para silenciar. ¡Empieza tu Guerra de las Galaxias!
+            1. Usa W, A, S, D para controlar la nave espacial, presiona Espacio para lanzar. 
+            2.El valor inicial del combustible es 15, y cada segundo decrece 1 punto, cuando el valor del combustible es 0, el juego termina. 
+            3.Tocar una botella de combustible que se ha caído añade 15 puntos a un máximo de 30 puntos.
+            4.Golpea un barco enemigo por 5 puntos. Los planetas deben ser golpeados dos veces, sumando 10 puntos. Deduce 10 puntos por golpear a un aliado.
+            5.Golpea al enemigo pierde 15 puntos de combustible, golpea al amigo resta 10 puntos.
+            6. El juego permite puntuaciones negativas.
+            7. Presione P Pausa el juego, presiona M para silenciar. 
+            ¡Empieza tu Guerra de las Galaxias!
           </p>
           <button id="start-btn" class="btn">
             <p>comenzar el juego</p>
@@ -94,7 +96,7 @@
               <span class="shoot">00</span>
             </p>
           </div>
-          <input type="text" id="name" placeholder="por favor, escriba su nombre" />
+          <input type="text" id="name" placeholder="Escriba su nombre de jugador" />
           <button id="submit-btn" class="btn" disabled>continuar el juego</button>
         </div>
         <div id="rank" class="column absolute">
@@ -102,9 +104,9 @@
             <thead>
               <tr>
                 <th>clasificación</th>
-                <th>nombre</th>
-                <th>Fracción</th>
-                <th>el número de segundos</th>
+                <th>Jugador</th>
+                <th>Puntaje</th>
+                <th>Segundos</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -121,6 +123,26 @@
         >
       </span>
     </footer>
-   
+    <script src="js/config/config.js"></script>
+    <script src="js/utils/utils.js"></script>
+    <script src="js/utils/res.js"></script>
+    <script src="js/class/scene.js"></script>
+    <script src="js/class/cooldown.js"></script>
+    <script src="js/class/element.js"></script>
+    <script src="js/class/animation.js"></script>
+    <script src="js/class/plane.js"></script>
+    <script src="js/class/bullet.js"></script>
+    <script src="js/class/player.js"></script>
+    <script src="js/class/enemy.js"></script>
+    <script src="js/class/meteorite.js"></script>
+    <script src="js/class/friend.js"></script>
+    <script src="js/class/star.js"></script>
+    <script src="js/class/fuel.js"></script>
+    <script src="js/scenes/start.js"></script>
+    <script src="js/scenes/play.js"></script>
+    <script src="js/scenes/over.js"></script>
+    <script src="js/scenes/rank.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
