@@ -43,7 +43,7 @@ const raf = (() => {
 
     const reg = (id, callback) => {
         if (events[id]) {
-            return console.error('id 已存在');
+            return console.error('id ');
         }
         events[id] = callback;
     };
